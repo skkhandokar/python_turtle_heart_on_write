@@ -5,7 +5,9 @@ wn=Screen()
 wn.bgcolor('black')
 
 t=turtle.Turtle()
+#you can choose any color
 t.pencolor('yellow')
+#you can choose any size
 t.pensize(8)
 def curve():
     for i in range (200):
@@ -29,19 +31,25 @@ def write(msg,pos):
     x,y=pos
     t.penup()
     t.goto(x,y)
+    #CHOOSE COLOR OF WRITTING
     t.color('white')
     style=('FF Blur',15,'bold')
     #Stencil Std
     t.write(msg,font=style)
-# write('I',(-68,95))
-# write('L',(-55,95))
-# write('O',(-42,95))
-# write('V',(-27,95))
-# write('E',(-14,95))
-# write('Y',(10,95))
-# write('O',(22,95))
-# write('U',(38,95))
-
+    
+ # YOU CAN WRITE ANYTHING 
+# write(' ',(-68,95))
+# write('S',(-55,95))
+# write('K',(-42,95))
+# write('K',(-27,95))
+# write('H',(-14,95))
+# write('A',(10,95))
+# write('N',(22,95))
+# write('D',(38,95))
+# write('O',(38,95))
+# write('K',(38,95))
+# write('A',(38,95))
+# write('R',(38,95))
 
 #bold
 write('I',(-92,95))
@@ -73,6 +81,4 @@ write('S',(83,95))
 # write('N',(58,95))
 # write('D',(71,95))
 # write('S',(83,95))
-
-
 wn.mainloop()
